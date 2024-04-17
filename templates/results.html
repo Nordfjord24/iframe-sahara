@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scan Results</title>
+</head>
+<body>
+    <h1>Scan Results for {{ url }}</h1>
+    <ul>
+        <li>Google Tag Manager ID: {% if gtm_id != "Not Found" %}{{ gtm_id }}{% else %}No GTM ID Found{% endif %}</li>
+        <li>Cookie Consent Tool/Platform: {% if cookie_consent %}Yes{% else %}No{% endif %}</li>
+    </ul>
+    <a href="/">Scan another site</a>
+</body>
+</html>
